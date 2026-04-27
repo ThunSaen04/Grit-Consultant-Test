@@ -1,0 +1,23 @@
+meta {
+  name: Put
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/hello
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Somchai"
+  //   "namess": "Somchai"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
